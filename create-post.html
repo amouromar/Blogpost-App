@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Post - My Blog</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/create-post.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="create-post.html">Create a Post</a></li>
+          <li><a href="report.html">Report an Issue</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Create a New Post</h2>
+        <form id="create-post-form">
+          <label for="post-title">Title:</label>
+          <input type="text" id="post-title" required />
+
+          <label for="post-content">Content:</label>
+          <textarea id="post-content" required placeholder=""></textarea>
+
+          <label for="post-media">Add Images/Videos:</label>
+          <input
+            type="file"
+            id="post-media"
+            accept="image/*,video/*"
+            multiple
+          />
+          <div id="media-preview" class="media-grid"></div>
+
+          <label for="post-voiceover">Add Voiceover:</label>
+          <button type="button" id="record-voiceover">Record Voiceover</button>
+          <audio id="voiceover-preview" controls></audio>
+
+          <label for="post-links">Add External Links:</label>
+          <input type="url" id="post-links" placeholder="https://example.com" />
+          <button type="button" id="add-link">Add Link</button>
+          <ul id="link-list"></ul>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 My Blog</p>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="report.html">Report an Issue</a></li>
+      </ul>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/create-post.js"></script>
+  </body>
+</html>

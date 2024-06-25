@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  height: 90vh;
+}
+
+svg {
+  width: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0.5em;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid #a5a4a4;
+  padding-bottom: 0.5em;
+  transition: step-end;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-sm {
+  display: none;
+}
+
+nav img {
+  width: 24px;
+  -webkit-text-fill-color: #fff;
+}
+
+main {
+  padding: 0 24rem;
+  height: 84vh;
+  overflow-y: scroll;
+}
+
+h2 {
+  border-width: 20%;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5em;
+}
+
+article {
+  margin-bottom: 1em;
+}
+
+footer {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 27px;
+  position: absolute;
+  bottom: 0px;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+footer ul {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+  main {
+    width: 95%;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: -webkit-fill-available;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  .menu-sm {
+    display: block;
+  }
+
+  nav img {
+    width: 24px;
+    -webkit-text-fill-color: #fff;
+  }
+
+  footer {
+    width: -webkit-fill-available;
+  }
+}
+
+/* Custom scrollbar for WebKit browsers */
+.post-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.post-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.post-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.post-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom scrollbar for Firefox */
+.post-container {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}

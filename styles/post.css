@@ -1,0 +1,95 @@
+:placeholder-shown {
+  font-family: inherit;
+}
+
+article h2 {
+  color: #333;
+}
+
+.post-details {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.post-engagement {
+  margin: 20px 0;
+}
+
+.post-engagement a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.post-engagement svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#comments h3 {
+  margin-top: 40px;
+}
+
+#comment-list {
+  margin-bottom: 20px;
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#comment-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+#comment-form button {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.post-container {
+  width: auto !important;
+  max-height: 35vh !important;
+  overflow-y: scroll !important;
+  margin: 0px 35px !important;
+}
+
+.post-title {
+  color: rgb(121 121 121) !important;
+  font-size: 30px !important;
+  margin: 14px 15px !important;
+}
+
+/* Custom scrollbar for WebKit browsers */
+.post-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.post-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.post-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.post-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Custom scrollbar for Firefox */
+.post-container {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
