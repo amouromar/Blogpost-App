@@ -10,7 +10,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  height: 90vh;
+  height: 100vh;
 }
 
 svg {
@@ -75,7 +75,7 @@ nav img {
 
 main {
   padding: 0 24rem;
-  height: 84vh;
+  height: 85vh;
   overflow-y: scroll;
 }
 
@@ -115,7 +115,7 @@ footer ul {
     padding: 0 0.5rem;
     margin: 0 auto;
     overflow-y: scroll;
-    height: -webkit-fill-available;
+    height: 85vh;
   }
 
   header {
